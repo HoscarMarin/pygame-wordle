@@ -106,13 +106,13 @@ def check_word(i):
             
 
 #Read accepted words (User input must be one of these)
-f = open("AllWordle.txt", "r")
+f = open("words\\AllWordle.txt", "r")
 words_with_newline = f.readlines()
 accepted_words = [word[:-1] for word in words_with_newline] #erase the last \n
 #print(len(accepted_words))
 
 #Read guessing words (Words to guess will be picked from these)
-f = open("CommonWordle.txt", "r")
+f = open("words\\CommonWordle.txt", "r")
 words_with_newline = f.readlines()
 guessing_words = [word[:-1] for word in words_with_newline] #erase the last \n
 #print(len(guessing_words))
